@@ -1,0 +1,260 @@
+/*  폰트 적용 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 노말라이즈 */
+body,
+ul,
+li,
+h1 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 라이브러리 */
+.con {
+    margin: 0 auto;
+}
+
+.img-box > img {
+    width: 100%;
+    display: block;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cell {
+    float: left;
+    box-sizing: border-box;
+}
+
+.cell-right {
+    float: right;
+    box-sizing: border-box;
+}
+
+.margin-0-auto {
+    margin: 0 auto;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.line-height-0-ch-only {
+    line-height: 0;
+}
+
+.line-height-0-ch-only > * {
+    line-height: normal;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute-left {
+    position: absolute;
+    left: 0;
+}
+
+.absolute-right {
+    position: absolute;
+    right: 0;
+}
+
+.absolute-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.width-100p {
+    width: 100%;
+}
+
+.table {
+    display: table;
+}
+
+.table-cell {
+    display: table-cell;
+}
+
+.vertical-align-top {
+    vertical-align: top;
+}
+
+.vertical-align-middle {
+    vertical-align: middle;
+}
+
+.vertical-align-bottom {
+    vertical-align: bottom;
+}
+
+/* 커스텀 */
+
+.con {
+    width: 1400px;
+}
+
+.con-min-width {
+    min-width: 1400px;
+}
+
+/*로고바*/
+.logo-bar > .img-box > img {
+    width: 300px;
+    padding: 20px 0;
+}
+
+
+/*메뉴바*/
+.menu-bar {
+    padding-top: 10px;
+    border-top: 1px solid #58595b;
+}
+
+.menu-bar > .manu-bar-1 > ul > li > a {
+    padding: 0 10px;
+    line-height: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.blossom-slider {
+    height: 100%;
+    position: relative;
+    padding: 20px 0;
+}
+
+.blossom-slider > .side-bars > div {
+    position: absolute;
+    top: ;
+    left: 0;
+    width: calc(50% - 100px);
+    height: 100%;
+    cursor: pointer;
+}
+
+.blossom-slider > .side-bars > div:last-child {
+    left: auto;
+    right: 0;
+}
+
+.blossom-slider > .side-bars > div > span {
+    position: absolute;
+    transform: translatey(-50%);
+    left: inherit;
+    right: inherit;
+    font-size: 5rem;
+    display: block;
+    margin: 350px 30px;
+    color: black;
+}
+
+.blossom-slider > .slides > .img-box {
+    opacity: 0;
+}
+
+.blossom-slider > .slides > .img-box.active {
+    opacity: 1;
+}
+
+.blossom-slider > .slides > .img-box > img {
+    position: absolute;
+}
+
+.blossom-slider > .pages {
+    position: absolute;
+    margin: 750px 600px;
+}
+
+.blossom-slider > .pages > span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    border: 1px solid #afafaf;
+    cursor: pointer;
+}
+
+.blossom-slider > .pages > span.active {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+
+/*컨텐츠바*/
+.content-bar {
+    margin-top: 720px;
+    padding-bottom: 20px;
+}
+
+.content-bar > .content2 > .row > .cell {
+    width: 50%;
+}
+
+.content-bar > .content2 > .row > .cell > .content {
+    padding: 0 5px;
+}
+
+.content-bar > .content2 > .row > .cell > .content > .head {
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+    margin: 10px 0;
+}
+
+.content-bar > .content2 > .row > .cell > .content > .head > .title {
+    font-size: 25px;
+}
+
+.content-bar > .content2 > .row > .cell > .content > .head > .btn-more {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-image: url(https://www.nonghyup.com/images/main/btn_more.png);
+}
+
+.content-bar > .content2 > .row > .cell > .content > .body > ul > li > a > span:before {
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 5px;
+}
+
+/*푸터*/
+.footer {
+    background-color: black;
+}
+.footer > .address  {
+    color: white;
+    font-size: 12px;
+}
