@@ -1,0 +1,613 @@
+/*  폰트 적용 */
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+/* 노말라이즈 */
+body,
+ul,
+li,
+h1 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 라이브러리 */
+.con {
+    margin: 0 auto;
+}
+
+.img-box > img {
+    width: 100%;
+    display: block;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cell {
+    float: left;
+    box-sizing: border-box;
+}
+
+.cell-right {
+    float: right;
+    box-sizing: border-box;
+}
+
+.margin-0-auto {
+    margin: 0 auto;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.line-height-0-ch-only {
+    line-height: 0;
+}
+
+.line-height-0-ch-only > * {
+    line-height: normal;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute-left {
+    position: absolute;
+    left: 0;
+}
+
+.absolute-right {
+    position: absolute;
+    right: 0;
+}
+
+.absolute-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.width-100p {
+    width: 100%;
+}
+
+.table {
+    display: table;
+}
+
+.table-cell {
+    display: table-cell;
+}
+
+.vertical-align-top {
+    vertical-align: top;
+}
+
+.vertical-align-middle {
+    vertical-align: middle;
+}
+
+.vertical-align-bottom {
+    vertical-align: bottom;
+}
+
+/* 커스텀 */
+
+.con {
+    width: 1140px;
+}
+
+.con-min-width {
+    min-width: 1140px;
+}
+
+.top-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+}
+
+body {
+    padding-top: 87px;
+}
+
+.top-box .top-bar-1 {
+    border-bottom: 1px solid #eee;
+}
+
+.top-box .top-bar-1 .btn-all-menu {
+    margin-left: 5px;
+}
+
+.top-box .top-bar-1 .menu-box-1 > ul > li > a {
+    position: relative;
+}
+
+.top-box .top-bar-1 .menu-box-1 > ul > li > a {
+    padding: 0 10px;
+}
+
+.top-box .top-bar-1 .menu-box-1 > ul > li:not(:first-child) > a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1px;
+    height: 10px;
+    background-color: black;
+}
+
+.top-box .top-bar-1 .content-item {
+    line-height: 40px;
+}
+
+.top-box .top-bar-1 .content-item > * {
+    line-height: normal;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.top-box .top-bar-2 .logo {
+    margin-top: 9px;
+}
+
+.top-box .top-bar-2 .menu-box-1 ul > li > a {
+    padding: 10px;
+    display: block;
+}
+
+.top-box .top-bar-2 .menu-box-1 > ul > li > a {
+    font-size: 18px;
+}
+
+.top-box .top-bar-2 .menu-box-1 > ul > li > a::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 6px;
+    background-image: url(https://www.nonghyup.com/images/common/arr_gnb_on.png);
+    margin-left: 10px;
+    position: relative;
+    top: -2px;
+    visibility: hidden;
+}
+
+.top-box .top-bar-2 .menu-box-1 > ul > li:hover > a::after {
+    visibility: visible;
+}
+
+.top-box .top-bar-2 .menu-box-1 > ul > li:hover > a {
+    color: #0158b9;
+}
+
+.top-box .top-bar-2 .menu-box-1 > ul > li > ul > li > a {
+    padding: 3px 10px;
+}
+
+.top-box .top-bar-2 .menu-box-1 > ul > li > ul > li:hover > a {
+    color: #005bac;
+}
+
+.top-box .top-bar-2 {}
+
+.top-box .top-bar-2-line-1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: black;
+}
+
+.top-box .top-bar-2 .menu-box-1 > ul > li {
+    min-width: 140px;
+}
+
+.top-box .top-bar-2 .menu-box-1 > ul ul {
+    transition: height 0.3s;
+    height: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.top-box .top-bar-2 .menu-box-1 > ul ul::before {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: #0158b9;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.top-box .top-bar-2 .menu-box-1 > ul > li:hover > ul::before {
+    display: block;
+}
+
+.top-box .top-bar-2 .menu-box-1 > ul > li:hover > ul {
+    background-color: #f1f7f9;
+}
+
+.top-box .top-bar-2 .menu-box-1:hover > ul ul {
+    height: 300px;
+}
+
+.box-1 {
+    box-sizing: border-box;
+    height: 381px;
+    background-image: url(https://www.nonghyup.com/images/main/img_main_visual.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 30px;
+}
+
+.box-1 .txt-box {
+    color: white;
+}
+
+.box-2 {
+    background-color: #ebf3fc;
+}
+
+.box-2 > .con > ul > li {
+    width: calc(100% / 7);
+}
+
+.box-2 > .con > ul > li > a {
+    height: 116px;
+}
+
+.box-2 > .con > ul > li > a > .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center 15px;
+}
+
+.box-2 > .con > ul > li > a > .on-img {
+    display: none;
+}
+
+.box-2 > .con > ul > li:hover > a > .on-img {
+    display: block;
+}
+
+.box-2 > .con > ul > li:hover > a > .off-img {
+    display: none;
+}
+
+.box-2 > .con > ul > li:hover > a {
+    background-color: #005bac;
+}
+
+.box-2 > .con > ul > li > a > .title-box {
+    position: absolute;
+    background-color: red;
+    bottom: 24px;
+    left: 0;
+    width: 100%;
+}
+
+.box-2 > .con > ul > li > a > .title-box > .title {
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.box-2 > .con > ul > li:hover > a > .title-box > .title {
+    color: white;
+}
+
+.box-2 > .con > .row > .cell {
+    position: relative;
+}
+
+.box-2 > .con > .row > .cell:not(:last-child)::after {
+    position: absolute;
+    top: 24px;
+    right: 0;
+    display: block;
+    content: '';
+    width: 1px;
+    height: 68px;
+    background: #c5cbd2;
+}
+
+/*컨텐츠*/
+.content-box > .row {
+    margin: 0 -10px;
+}
+
+.content-box > .row > .cell {
+    width: 33.3333%;
+    padding: 0 10px;
+    margin-top: 20px;
+}
+
+.content-box > .row > .cell:nth-child(3n + 1) {
+    clear: both;
+}
+
+.content-box > .row > .cell > .content > .head > .img-box > .img {
+    height: 127px;
+}
+
+.content-box > .row > .cell > .content > .head > .title {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.content-box > .row > .cell > .content > .head > .btn-more {
+    width: 19px;
+    height: 19px;
+    background-image: url(https://www.nonghyup.com/images/main/btn_more.png);
+    margin-top: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.content-box > .row > .cell > .content > .head > .slider > .cell {
+    padding: 0 5px;
+    padding-top: 5px;
+}
+
+.content-box > .row > .cell > .content > .head.head-type-2 > div {
+    font-size: 16px;
+    border: 1px solid #dfdfdf;
+    border-bottom-color: #005bac;
+    width: 50%;
+    text-align: center;
+    padding: 3.5px 0;
+    cursor: pointer;
+}
+
+.content-box > .row > .cell > .content > .head.head-type-2 > div.active {
+    border-color: #005bac #005bac transparent #005bac;
+    color: #005bac;
+    background-color: #ecf4fc;
+}
+
+.content-box > .row > .cell > .content > .head.head-type-3 > .date {
+    color: #343434;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.content-box > .row > .cell > .content > .body.body-type-1 {
+    padding-top: 20px;
+    border-top: 1px solid #dfdfdf;
+}
+
+.content-box > .row > .cell > .content > .body.body-type-1-2 {
+    border-top-width: 0;
+}
+
+.content-box > .row > .cell > .content > .body.body-type-1-2 > ul {
+    display: none;
+}
+
+.content-box > .row > .cell > .content > .body.body-type-1-2 > ul.active {
+    display: block;
+}
+
+.content-box > .row > .cell > .content > .body.body-type-1 > ul > li > a {
+    color: #434343;
+    font-size: 14px;
+}
+
+.content-box > .row > .cell > .content > .body.body-type-1 > ul > li > a > .title {
+    white-space: nowrap;
+    width: calc(100% - 80px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 5px 0;
+}
+
+.content-box > .row > .cell > .content > .body.body-type-1 > ul > li > a:hover > .title {
+    color: #005BAC;
+    text-decoration: underline;
+}
+
+.content-box > .row > .cell > .content > .body.body-type-2 {
+    border: 1px solid #dfdfdf;
+}
+
+.content-box > .row > .cell > .content > .body.body-type-2 > .img-box {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content-box > .row > .cell > .content > .body.body-type-2 > .img-box::after {
+    content: "";
+    display: block;
+    padding-top: 35%;
+}
+
+.content-box > .row > .cell > .content > .head > .head-1 {
+    padding-bottom: 10px;
+}
+
+/*before*/
+
+.content-box > .row > .cell > .content > .body.body-type-1 > ul > li > .block > .title::before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #7c7c7c;
+    margin-right: 9px;
+}
+
+
+
+/*6*/
+.content-box > .row > .cell > .content > .society {
+    border: 1px solid #d6e2e5;
+}
+
+.content-box > .row > .cell > .content > .society > li {
+    border-right: solid 1px #d6e2e5;
+    width: 33.333%;
+    text-align: center;
+    height: 76px;
+}
+
+.content-box > .row > .cell > .content > .society > li > span {
+    font-size: 13px;
+}
+
+.content-box > .row > .cell > .content > .society > li > .box1 {
+    margin-bottom: 20px;
+}
+
+.content-box > .row > .cell > .content > .society > li > .box2 {
+    background-color: #f0f3f4;
+    width: 100%;
+    display: block;
+    margin-top: 0px;
+    height: 15px;
+    font-weight: bold;
+}
+
+.content-box > .row > .cell > .content > .society > li:last-child > img {
+    height: 36px;
+}
+
+.content-box > .row > .cell > .content > .society > li > img {
+    display: block;
+    margin: 0 auto;
+    width: 35px;
+}
+
+.content-box > .row > .cell > .content > .sns-box {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 9px;
+    line-height: 50px;
+    background: #ebf3fc;
+    border-radius: 10px;
+    height: 45px;
+}
+
+.content-box > .row > .cell > .content > .sns-box > .txt {
+    float: left;
+    padding-left: 20px;
+    width: 166px;
+    font-size: 15px;
+    color: #333;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+}
+
+.content-box > .row > .cell > .content > .sns-box > .row {
+    float: right;
+    overflow: hidden;
+    width: 187px;
+    line-height: 40px;
+    text-align: center;
+    background: #fff;
+    border-radius: 10px;
+    margin-top: -43px;
+    padding-left: 22px;
+}
+
+.content-box > .row > .cell > .content > .sns-box > .row > .cell {
+    float: left;
+    padding-top: 7px;
+    margin: 0 10px;
+}
+
+.content-box > .row > .cell > .content > .sns-box > .row > .cell > img {
+    display: block;
+    width: 28px;
+}
+
+/*퓨터*/
+
+.footer-box {
+    width: 100%;
+    background: #ebebeb;
+    height: 191px;
+    position: relative;
+    top: 50px;
+}
+
+.footer-box > .foot-top {
+    border-bottom: 1px solid #d5d5d5;
+    height: 70px;
+    overflow: hidden;
+}
+
+.footer-box > .foot-top > .foot-link {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.footer-box > .foot-top > .foot-link > .row {
+    float: left;
+    padding: 27px 0 0 0;
+}
+
+.footer-box > .foot-top > .foot-link > .row > .cell {
+    float: left;
+    margin-right: 18px;
+}
+
+.footer-box > .foot-top > .foot-link > .row > .cell:hover {
+    text-decoration: underline;
+}
+
+.footer-box > .foot-top > .foot-link > .row > img {
+    margin-left: 50px;
+}
+
+.footer-box > .foot-bottom > address {
+    font-size: 14px;
+    font-style: normal;
+    width: 1170px;
+    padding: 30px 0 0 0;
+    margin: 0 auto;
+    color: #6f6f6f;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+
+.footer-box > .foot-bottom > a > img {
+    margin-top: -100px;
+}
