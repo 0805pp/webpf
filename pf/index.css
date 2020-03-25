@@ -1,0 +1,384 @@
+/*  폰트 적용 */
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap');
+
+html {
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+/* 노말라이즈 */
+body,
+ul,
+li,
+h1 {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 라이브러리 */
+.con {
+    margin: 0 auto;
+}
+
+.img-box > img {
+    width: 100%;
+    display: block;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.cell {
+    float: left;
+    box-sizing: border-box;
+}
+
+.cell-right {
+    float: right;
+    box-sizing: border-box;
+}
+
+.margin-0-auto {
+    margin: 0 auto;
+}
+
+.block {
+    display: block;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.line-height-0-ch-only {
+    line-height: 0;
+}
+
+.line-height-0-ch-only > * {
+    line-height: normal;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute-left {
+    position: absolute;
+    left: 0;
+}
+
+.absolute-right {
+    position: absolute;
+    right: 0;
+}
+
+.absolute-middle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.width-100p {
+    width: 100%;
+}
+
+.table {
+    display: table;
+}
+
+.table-cell {
+    display: table-cell;
+}
+
+.vertical-align-top {
+    vertical-align: top;
+}
+
+.vertical-align-middle {
+    vertical-align: middle;
+}
+
+.vertical-align-bottom {
+    vertical-align: bottom;
+}
+
+/* 커스텀 */
+
+.con {
+    width: 1200px;
+}
+
+.con-min-width {
+    min-width: 1200px;
+}
+
+/* 반응형 레이아웃 */
+/*
+.con {
+    max-width:1150px;
+}
+
+.con-min-width {
+    min-width:320px;
+}
+
+html, body {
+    overflow-x:hidden;
+}
+*/
+
+/*홈*/
+.cover {
+    height: 980px;
+    background-color: #FDDD0F;
+}
+
+.cover > span {
+    display: block;
+    font-size: 4rem;
+    margin-top: 350px;
+}
+
+.cover > .cover-bar {
+    border: 3px solid black;
+    padding: 20px;
+    margin-top: 300px;
+}
+
+.cover > .cover-bar > h1 {
+    font-size: 72px;
+}
+
+/*프로필*/
+
+.profile {
+    margin-top: 200px;
+    height: 900px;
+}
+
+.profile > .profile-bar:last-child {
+    width: 800px;
+}
+
+.profile > h1 {
+    text-align: center;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.profile > .profile-bar1 {
+    width: 30%;
+}
+
+.profile > .profile-bar > * {
+    display: block;
+
+}
+
+.profile > .profile-bar > a > img {
+    width: 250px;
+}
+
+.profile > .profile-bar > span {
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.profile > .profile-bar > ul {
+    display: block;
+}
+
+.profile > .profile-bar > ul > li > .content {
+    margin-left: 30px;
+}
+
+.profile > .profile-bar > ul > li > .content:last-child {
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.profile > .profile-bar > ul > li > .content > .head > .title {
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.profile > .profile-bar > ul > li > .content > .body > ul > li > a > span {
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.profile > .profile-bar > ul > li > .content > .body > ul > li > a > .cell-right {
+    margin-right: 0;
+}
+
+.profile > .profile-bar > ul > li > .content > .body > .row > .cell {
+    padding: 20px 5px;
+    width: 33.333%;
+    text-align: center;
+}
+
+.profile > .profile-bar > ul > li > .content > .body > .row > .cell > a {
+    font-size: 20px;
+    padding-right: 15px;
+}
+
+.profile > .profile-bar > ul > li > .content > .body > .row > .cell > .black {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.profile > .profile-bar > ul > li > .content > .body > .row > .cell > .white {
+    width: 20px;
+    height: 20px;
+    background-color: #afafaf;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/*디자인*/
+
+.wedpf-slider {
+    height: 100%;
+    position: relative;
+    height: 850px;
+}
+
+.wedpf-slider > h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.wedpf-slider > .side-bars > div {
+    position: absolute;
+    top: ;
+    left: 0;
+    width: calc(50% - 100px);
+    height: 100%;
+    cursor: pointer;
+}
+
+.wedpf-slider > .side-bars > div:last-child {
+    left: auto;
+    right: 0;
+}
+
+.wedpf-slider > .side-bars > div > span {
+    position: absolute;
+    transform: translatey(-50%);
+    left: inherit;
+    right: inherit;
+    font-size: 3rem;
+    display: block;
+    margin: 370px 0;
+}
+
+.wedpf-slider > .slides > .img-box {
+    opacity: 0;
+}
+
+.wedpf-slider > .slides > .img-box.active {
+    opacity: 1;
+}
+
+.wedpf-slider > .slides > .img-box > img {
+    margin-top: 10px;
+    position: absolute;
+    width: 700px;
+    margin-left: 250px;
+}
+
+.wedpf-slider > .pages {
+    position: absolute;
+    margin: 750px 600px;
+}
+
+.wedpf-slider > .pages > span {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    border: 1px solid #afafaf;
+    cursor: pointer;
+}
+
+.wedpf-slider > .pages > span.active {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/*모작&리디자인*/
+
+.redesign {
+    height: 690px;
+}
+
+.redesign > .redesign-bar {
+    margin-left: 10px;
+}
+.redesign > h1 {
+    text-align: center;
+    padding: 10px;
+    font-size: 50px;
+    display: block;
+}
+
+.redesign > .redesign-bar > div {
+    display: inline-block;
+    height: 550px;
+    width: 49%;
+    box-sizing: border-box;
+    border: 2px solid black;
+    margin-top: 20px;
+    background-color: #FDDD0F;
+}
+
+.redesign > .redesign-bar > div > ul > li {
+    width: 50%;
+    height: 250px;
+}
+
+.redesign > .redesign-bar > div > ul > li > img {
+    width: 275px;
+    margin: 10px 10px;
+}
+
+.redesign > .redesign-bar > div > ul > li > .page {
+    text-align: center;
+    display: block;
+    font-size: 20px;
+}
+
+.redesign > .redesign-bar > div > ul > li > .period {
+    text-align: center;
+    display: block;
+    font-size: 17px;
+}
+.thank > span {
+    font-size:30px;
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+/*푸터*/
+.footer {
+    background-color:#FDDD0F;
+    font-size:20px;
+    text-align:center;
+}
