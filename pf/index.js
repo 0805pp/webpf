@@ -1,4 +1,3 @@
-//디자인 슬라이더
 // $ => 포장하다.
 $('.wedpf-slider > .side-bars > div').click(function () {
     // this 클릭 당사자

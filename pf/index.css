@@ -332,6 +332,17 @@ html, body {
 .redesign > .redesign-bar {
     margin-left: 10px;
 }
+
+.redesign > .redesign-bar >.redesign-1 > span {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 240px;
+}
+.redesign > .redesign-bar >.redesign-2 > span {
+    display: inline-block;
+    font-size: 20px;
+    margin-left: 240px;
+}
 .redesign > h1 {
     text-align: center;
     padding: 10px;
